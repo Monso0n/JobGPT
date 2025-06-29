@@ -1,0 +1,50 @@
+{
+    "$schema": "https://raw.githubusercontent.com/jsonresume/resume-schema/v1.0.0/schema.json",
+    "basics": {
+      "name": "Mayank Kainth",
+      "label": "Software Engineer",
+      "image": "",
+      "email": "mayank.kainth@torontomu.ca",
+      "phone": "+1-(647)-206-3327",
+      "url": "https://monso0n.github.io/mayank-kainth",
+      "location": {
+        "address": "",
+        "postalCode": "",
+        "city": "Toronto, Ontario",
+        "countryCode": "Canada",
+        "region": "Ontario"
+      },
+      "profiles": [
+        {
+          "network": "LinkedIn",
+          "username": "mayank-kainth-8a0989195",
+          "url": "https://www.linkedin.com/in/mayank-kainth-8a0989195/"
+        },
+        {
+          "network": "GitHub",
+          "username": "Monso0n",
+          "url": "https://github.com/Monso0n"
+        }
+      ]
+    },
+    "coverLetter": {
+        "date": "",
+        "recipient": {
+          "name": "Hiring Manager",
+          "company": "[Company Name]",
+          "city": "[Company City]"
+        },
+        "salutation": "Dear Hiring Manager,",
+        "body": [
+          "I'm excited to apply for the [Job Title] position at [Company Name]. With a strong foundation in [insert 1–2 strengths like AI automation, web development, etc.] and a passion for solving real-world problems through code, I believe I would be a valuable addition to your team.",
+          
+          "In my recent experience at [Previous Company or Project], I [describe a key achievement, such as 'developed a scalable backend system that reduced load times by 30%']. This aligns closely with your need for someone who can [relate it to a job requirement, like 'build reliable, high-performance applications']. My expertise in [insert key technologies like Python, React, etc.] has enabled me to deliver results quickly and collaboratively.",
+          
+          "What draws me to [Company Name] is your focus on [insert something unique about the company or mission, like 'open-source innovation' or 'AI in healthcare']. That mission resonates with my own values and goals, and I’m eager to contribute to meaningful projects that make a difference.",
+          
+          "I've attached my resume, which includes projects like [Project Name, e.g., JobGPT], demonstrating my ability to think critically, adapt quickly, and deliver quality code. I would welcome the opportunity to discuss how I can contribute to [Company Name] and help bring your goals to life."
+        ],
+        "closing": "Best regards,",
+        "signature": "Mayank Kainth"
+      }
+  } 

@@ -1,0 +1,485 @@
+{
+  "$schema": "https://raw.githubusercontent.com/jsonresume/resume-schema/v1.0.0/schema.json",
+  "basics": {
+    "name": "Mayank Kainth",
+    "label": "Software Engineer",
+    "image": "",
+    "email": "mayank.kainth@torontomu.ca",
+    "phone": "+1-(647)-206-3327",
+    "url": "https://monso0n.github.io/mayank-kainth",
+    "location": {
+      "address": "",
+      "postalCode": "",
+      "city": "Toronto, Ontario",
+      "countryCode": "Canada",
+      "region": "Ontario"
+    },
+    "profiles": [
+      {
+        "network": "LinkedIn",
+        "username": "mayank-kainth-8a0989195",
+        "url": "https://www.linkedin.com/in/mayank-kainth-8a0989195/"
+      },
+      {
+        "network": "GitHub",
+        "username": "Monso0n",
+        "url": "https://github.com/Monso0n"
+      }
+    ]
+  },
+  "skills": [
+    {
+      "name": "Programming Languages",
+      "level": "Advanced",
+      "keywords": [
+        "C",
+        "C++",
+        "Java",
+        "Python",
+        "Bash"
+      ]
+    },
+    {
+      "name": "Web Development",
+      "level": "Advanced",
+      "keywords": [
+        "HTML",
+        "CSS",
+        "JavaScript",
+        "TypeScript",
+        "PHP",
+        "Flask",
+        "Apache",
+        "React",
+        "ReactJS",
+        "NextJS",
+        "REST APIs",
+        "Tailwind CSS",
+        "Bootstrap",
+        "Flask"
+      ]
+    },
+    {
+      "name": "Database Systems",
+      "level": "Intermediate",
+      "keywords": [
+        "SQLite",
+        "Microsoft Access",
+        "MySQL",
+        "OracleDB",
+        "Redis",
+        "Supabase",
+        "PostgreSQL"
+      ]
+    },
+    {
+      "name": "Data Analysis & Machine Learning",
+      "level": "Advanced",
+      "keywords": [
+        "Jupyter Notebook",
+        "NumPy",
+        "Pandas",
+        "MatPlotLib",
+        "Scikit-learn",
+        "PyTorch",
+        "TensorFlow",
+        "OpenCV",
+        "MatPlotLib"
+      ]
+    },
+    {
+      "name": "DevOps & Cloud",
+      "level": "Intermediate",
+      "keywords": [
+        "Git",
+        "Docker",
+        "Jenkins",
+        "Grafana",
+        "AWS",
+        "Vercel",
+        "ngrok"
+      ]
+    },
+    {
+      "name": "Embedded Systems",
+      "level": "Intermediate",
+      "keywords": [
+        "Arduino",
+        "Raspberry Pi",
+        "ESP32"
+      ]
+    },
+    {
+      "name": "Other Tools & Technologies",
+      "level": "Intermediate",
+      "keywords": [
+        "VirtualBox",
+        "VSCode",
+        "Vim",
+        "PowerBI"
+      ]
+    }
+  ],
+  "education": [
+    {
+      "institution": "Toronto Metropolitan University",
+      "url": "https://www.torontomu.ca/",
+      "area": "Computer Science Cooperative Program",
+      "studyType": "Bachelor of Science (Honours) Computer Science Cooperative Program",
+      "startDate": "2019-09-01",
+      "endDate": "2025-04-01",
+      "score": "Graduated with Distinction",
+      "courses": [
+        "Dean's List: 2020, 2021, 2025",
+        "Undergraduate Thesis Project in Remotely Operated Mobile Robotics",
+        "Founder and Co-President of TMU Muay Thai Club"
+      ]
+    }
+  ],
+  "work": [
+    {
+      "name": "Environment and Climate Change Canada",
+      "location": "North York, Toronto, ON",
+      "description": "Government of Canada department focused on environmental protection and weather services",
+      "position": "Software Engineer (Co-op)",
+      "url": "https://www.canada.ca/en/environment-climate-change.html",
+      "startDate": "2023-05-01",
+      "endDate": "2024-08-01",
+      "summary": "Optimized radar processing systems and built monitoring solutions for weather data infrastructure.",
+      "highlights": [
+        "Refactored 'Dispatcher' module, replacing inefficient linear search logic with a custom SQLite solution. Reduced complexity from O(n) to O(log n), dramatically improving querying performance, memory usage, and scalability",
+        "Delivered multiple production-ready bug fixes and new features with full unit test coverage, thorough documentation, and code reviews",
+        "Built and maintained Grafana dashboards to monitor live and development radar processing environments. Investigated server-side errors, performed root cause analysis, and implemented long-term fixes"
+      ]
+    },
+    {
+      "name": "Ontario Power Generation",
+      "location": "Pickering, ON",
+      "description": "Ontario's largest electricity generator and clean energy provider",
+      "position": "Data Scientist (Co-op)",
+      "url": "https://www.opg.com/",
+      "startDate": "2021-09-01",
+      "endDate": "2022-04-01",
+      "summary": "Developed automation tools and analyzed supply chain data for nuclear power operations.",
+      "highlights": [
+        "Developed TWEEKs, an internal automation tool that reduced report generation time from over an hour to mere seconds—streamlining part risk assessments and enhancing cross-departmental coordination",
+        "Analyzed historical part usage data to identify low-stock parts required for future projects, resulting in timely procurement. Highlighted over-stocked materials for Asset Recovery initiative",
+        "Acted as the Supply Chain liaison for Nuclear Refurbishment Projects, coordinating with project leaders and vendors to optimize parts delivery and project planning timelines"
+      ]
+    }
+  ],
+  "languages": [
+    {
+      "language": "English",
+      "fluency": "Native speaker"
+    }
+  ],
+  "interests": [
+    {
+      "name": "Martial Arts",
+      "keywords": [
+        "Muay Thai"
+      ]
+    },
+    {
+      "name": "Robotics",
+      "keywords": [
+        "Mobile Robotics",
+        "Embedded Systems"
+      ]
+    },
+    {
+      "name": "Machine Learning",
+      "keywords": [
+        "Computer Vision",
+        "Recommendation Systems"
+      ]
+    }
+  ],
+  "references": [],
+  "projects": [
+    {
+      "name": "MATILDA: Remote Control Bomb Defusal Robot",
+      "description": "Undergraduate thesis project developing a remotely operated robot for hazardous environment operations. Supervised by Dr. Alexander Ferworn.",
+      "highlights": [
+        "Developed a UDP-based control system to transmit data packets from a PS5 controller on a laptop to an ESP32 microcontroller connected to a Sabertooth motor driver and arm controller, enabling precise remote actuation of the robot and its 6DOF arm.",
+        "Developed a multi-camera video streaming pipeline using Raspberry Pi and WebRTC; streamed real-time feeds from three onboard cameras to a Flask-based operator dashboard for situational awareness.",
+        "Deployed and configured a private mesh network of five routers across a university engineering building to ensure low-latency communication and uninterrupted control during live operation tests.",
+        "Contributed to the mechanical integration of the robotic system, including 3D printing, mounting, and calibration of structural components and the robotic arm assembly."
+      ],
+      "keywords": [
+        "ESP32",
+        "Raspberry Pi",
+        "Python",
+        "3D Printing",
+        "Websockets"
+      ],
+      "startDate": "2024-09-01",
+      "endDate": "2025-04-01",
+      "url": "https://www.youtube.com/watch?v=wC7nL199vyk",
+      "roles": [
+        "Lead Developer",
+        "System Integrator"
+      ],
+      "entity": "Toronto Metropolitan University",
+      "type": "thesis"
+    },
+    {
+      "name": "GameScout",
+      "description": "Game recommendation system developed for McGill Hacks 2025 hackathon",
+      "highlights": [
+        "Led a team of 4 students to develop a functional game recommendation system within 24 hours during McGill Hacks 2025.",
+        "Implemented collaborative and content-based filtering algorithms using Scikit-learn to generate personalized recommendations based on user preferences.",
+        "Developed a web applicaiton interface by integrating a Flask-powered backend with a responsive front-end, allowing users to input preferences and receive dynamic suggestions."
+      ],
+      "keywords": [
+        "Python",
+        "Flask",
+        "Jupyter Notebook",
+        "NumPy",
+        "Pandas",
+        "Scikit-learn",
+        "Matplotlib",
+        "HTML",
+        "CSS",
+        "JavaScript"
+      ],
+      "startDate": "2025-01-01",
+      "endDate": "2025-01-01",
+      "url": "",
+      "roles": [
+        "Team Lead",
+        "Full-stack Developer"
+      ],
+      "entity": "McGill Hacks 2025",
+      "type": "hackathon"
+    },
+    {
+      "name": "JobGPT: AI-Powered Resume & Cover Letter Generator",
+      "description": "A full-stack web application that leverages Large Language Models to automatically generate tailored resumes and cover letters for job applications.",
+      "highlights": [
+        "Leverages the OpenAI API to dynamically tailor resumes and cover letters to specific job descriptions, ensuring alignment with a master resume to maintain factual accuracy.",
+        "Developed a full-stack application featuring a React front-end for user interaction and a Flask back-end to manage API calls.",
+        "Integrated an SQLite database for persistent storage, enabling robust job application tracking and statistical analysis of past applications.",
+        "Created a complex Playwright scraper to query and scrape job postings from LinkedIn and save into the database.",
+        "Automated the final output to a professional, one-page PDF format for both the resume and cover letter, ready for submission."
+      ],
+      "keywords": [
+        "Python",
+        "HTML",
+        "CSS",
+        "JavaScript",
+        "React",
+        "Flask",
+        "OpenAI API",
+        "SQLite",
+        "JsonResume",
+        "Playwright"
+      ],
+      "startDate": "2025-06-01",
+      "endDate": "2025-06-01",
+      "url": "",
+      "roles": [
+        "Developer"
+      ],
+      "entity": "Personal Project",
+      "type": "automation"
+    },
+    {
+      "name": "Elev8 AI Solutions: AI Voice Receptionist",
+      "description": "A real-time AI receptionist system that handles incoming calls using OpenAI's GPT-4o Realtime API and Twilio's telephony services, providing professional customer service and company information.",
+      "highlights": [
+        "Developed a real-time voice AI system using OpenAI's GPT-4o Realtime API with WebSocket streaming for instant conversational responses, enabling natural voice interactions with callers.",
+        "Built a FastAPI backend with WebSocket support to handle bidirectional audio streaming between Twilio's telephony service and OpenAI's real-time API, ensuring seamless voice communication.",
+        "Integrated Twilio's Media Streams API to capture and process incoming audio in real-time, converting it to the format required by OpenAI's Realtime API for voice-to-voice conversations.",
+        "Implemented secure API key management using environment variables and deployed the system using ngrok for public webhook accessibility, enabling Twilio to route calls to the local development server.",
+        "Created a professional AI receptionist persona that introduces callers and answers questions about services, and provides company information in a conversational manner."
+      ],
+      "keywords": [
+        "Python",
+        "FastAPI",
+        "OpenAI API",
+        "Twilio API",
+        "Real-time TTS and STT",
+        "Webhooks",
+        "WebSockets",
+        "Uvicorn"
+      ],
+      "startDate": "2025-06-01",
+      "endDate": "2025-06-01",
+      "url": "https://www.elev8ai.xyz/",
+      "roles": [
+        "Full-Stack Developer",
+        "AI Integration Specialist"
+      ],
+      "entity": "Elev Solutions",
+      "type": "ai-integration"
+    },
+    {
+      "name": "Rozer's Barber Station: Full-Stack Booking System",
+      "description": "A comprehensive barbershop management system with real-time booking, SMS notifications, and admin dashboard built for a local barbershop in Brampton, Ontario.",
+      "highlights": [
+        "Developed a full-stack web application using a modern tech stack featuring a responsive UI, animated hero sections, service cards, and realtime booking form.",
+        "Implemented a live booking system with Supabase backend that handles multi-service bookings, dynamic time slot generation based on barber schedules, and conflict detection to prevent double-bookings.",
+        "Built an automated SMS notification system using Twilio API that sends booking confirmations to customers and barbers, appointment reminders, and follow-up messages.",
+        "Created a comprehensive admin dashboard with bcrypt-secured authentication, real-time booking management, visual weekly schedule grids per barber, and CRUD operations for employees, services, and schedules.",
+        "Integrated Google Reviews API to display customer testimonials and implemented a Twilio webhook for SMS-based booking management allowing customers to cancel appointments via text message."
+      ],
+      "keywords": [
+        "Next.js",
+        "React",
+        "TypeScript",
+        "Tailwind CSS",
+        "Supabase",
+        "PostgreSQL",
+        "Twilio API",
+        "SMS Integration",
+        "Webhooks"
+      ],
+      "startDate": "2025-06-01",
+      "endDate": "2025-06-01",
+      "url": "https://rozer-barber-shop.vercel.app/",
+      "roles": [
+        "Full-Stack Developer"
+      ],
+      "entity": "Personal Project",
+      "type": "web-application"
+    },
+    {
+      "name": "Vector Space Model Search Engine",
+      "description": "Custom search engine implementation using vector space model approach",
+      "highlights": [
+        "Built a search engine from scratch, using the Vector Space Model approach. Implemented TF-IDF weighting, tokenization, and stop-word removal for accurate document-query matching.",
+        "Designed and built an inverted index structure to enable fast top-10 result retrieval across large text datasets.",
+        "Developed a modular pre-processing pipeline for flexible text normalization, improving search relevance and performance."
+      ],
+      "keywords": [
+        "Vanilla Python"
+      ],
+      "startDate": "2020-10-01",
+      "endDate": "2020-11-01",
+      "url": "https://github.com/Monso0n/Vector-Space-Model-Search-Engine",
+      "roles": [
+        "Developer"
+      ],
+      "entity": "Academic Project",
+      "type": "application"
+    },
+    {
+      "name": "VALORANT Auto Music Player",
+      "description": "Automated music controller that synchronizes with in-game events",
+      "highlights": [
+        "Built an automated music controller that synchronizes audio playback with in-game events in VALORANT by analyzing screen state using OpenCV and interfacing with the Windows API.",
+        "Implemented logic to dynamically pause or resume music based on round transitions, enhancing user experience without manual input.",
+        "Designed a user-friendly GUI in Tkinter to manage playlists, adjust volume, and configure automation settings in real-time."
+      ],
+      "keywords": [
+        "Python",
+        "OpenCV",
+        "Windows API",
+        "Tkinter"
+      ],
+      "startDate": "2021-01-01",
+      "endDate": "2021-01-01",
+      "url": "https://github.com/Monso0n/VAMP",
+      "roles": [
+        "Developer"
+      ],
+      "entity": "Personal Project",
+      "type": "application"
+    },
+    {
+      "name": "Computer Vision Object Recognition",
+      "description": "Real-time object recognition system combining traditional CV with deep learning.",
+      "highlights": [
+        "Built a real-time object recognition system combining traditional computer vision techniques with deep learning models for accurate and responsive detection.",
+        "Enabled custom training and fine-tuning of models to support domain-specific object recognition use cases.",
+        "Developed an intuitive visualization interface for live camera input, annotated detections, and interactive testing."
+      ],
+      "keywords": [
+        "Python",
+        "OpenCV",
+        "TensorFlow/Keras",
+        "NumPy"
+      ],
+      "startDate": "2020-09-01",
+      "endDate": "2020-09-01",
+      "url": "https://github.com/Monso0n/CVOR",
+      "roles": [
+        "Developer"
+      ],
+      "entity": "Academic Project",
+      "type": "application"
+    },
+    {
+      "name": "Netflix Movie Recommender System",
+      "description": "Custom recommendation engine using collaborative and content-based filtering.",
+      "highlights": [
+        "Designed and implemented a custom recommendation engine from scratch using collaborative and content-based filtering logic based on user ratings and viewing history.",
+        "Preprocessed and analyzed large datasets with Pandas to optimize performance and ensure low-latency recommendations.",
+        "Built a dynamic web interface in Streamlit to allow users to receive personalized movie suggestions in real-time."
+      ],
+      "keywords": [
+        "Python",
+        "Pandas",
+        "Streamlit"
+      ],
+      "startDate": "2020-12-01",
+      "endDate": "2020-12-01",
+      "url": "https://github.com/Monso0n/Movie-Recommender-Engine",
+      "roles": [
+        "Developer"
+      ],
+      "entity": "Academic Project",
+      "type": "application"
+    },
+    {
+      "name": "BoomBot",
+      "description": "2D physics-based platformer game with explosion-based movement mechanics",
+      "highlights": [
+        "Designed and developed a 2D physics-based platformer where the player navigates by strategically detonating bombs to launch the character across obstacles and reach the level objective.",
+        "Engineered core game mechanics using custom physics logic in p5.play, including explosion-based propulsion, collision detection, health tracking, and level progression.",
+        "Built multiple handcrafted levels with increasing difficulty and dynamic interactions to encourage experimentation and spatial problem-solving."
+      ],
+      "keywords": [
+        "JavaScript",
+        "p5.js",
+        "p5.play"
+      ],
+      "startDate": "2025-04-01",
+      "endDate": "2025-04-01",
+      "url": "https://github.com/Monso0n/BoomBot",
+      "roles": [
+        "Game Developer",
+        "Designer"
+      ],
+      "entity": "Personal Project",
+      "type": "game"
+    },
+    {
+      "name": "Network Routing Algorithm Visualizer",
+      "description": "A Python program to visualize the routing taken by the Djikstra's and Bellman-Ford Algorthms. Uses Tkinter, NetworkX, and Matplotlib.",
+      "highlights": [
+        "Developed an interactive GUI using Tkinter, allowing users to create custom network topologies and visualize algorithm execution step-by-step.",
+        "Utilized NetworkX for graph data structures and Matplotlib to create dynamic, animated visualizations of the pathfinding process for both Dijkstra's and Bellman-Ford algorithms."
+      ],
+      "keywords": [
+        "Python",
+        "Tkinter",
+        "NetworkX",
+        "Matplotlib"
+      ],
+      "startDate": "2023-04-01",
+      "endDate": "2023-04-01",
+      "url": "https://github.com/Monso0n/Network-Routing-Algorithm-Visualizer",
+      "roles": [],
+      "entity": "Academic Project",
+      "type": ""
+    }
+  ],
+  "meta": {
+    "canonical": "https://monso0n.github.io/mayank-kainth",
+    "version": "v1.0.0",
+    "lastModified": "2025-06-21T12:00:00"
+  }
+}

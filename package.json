@@ -1,0 +1,7 @@
+{
+  "dependencies": {
+    "jsonresume-theme-elegant": "^1.16.1",
+    "jsonresume-theme-scholar": "file:jsonresume-theme-scholar",
+    "resumed": "^3.0.0"
+  }
+}

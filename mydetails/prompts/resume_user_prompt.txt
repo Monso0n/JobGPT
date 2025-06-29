@@ -1,0 +1,15 @@
+Tailor the following resume JSON to the provided job description.
+
+Job Title: {job_title}
+Company: {company_name}
+
+Job Description:
+{job_description}
+
+Career Facts:
+{career_facts}
+
+Master Resume:
+{master_resume_json}
+
+Return only the final JSON Resume object. 

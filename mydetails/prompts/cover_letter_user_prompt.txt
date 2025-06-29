@@ -1,0 +1,56 @@
+Generate a tailored cover letter for this position.
+
+Job Title: {job_title}
+Company: {company_name}
+Job Location: {job_location}
+
+Job Description:
+{job_description}
+
+Tailored Resume (created for this specific job):
+{tailored_resume_json}
+
+Master Cover Letter Template:
+{master_cover_letter_json}
+
+IMPORTANT INSTRUCTIONS:
+1. Return ONLY a JSON object with 'basics' and 'coverLetter' sections
+2. Use the master cover letter template structure as your base
+3. Only modify the content within the 'coverLetter' section
+4. Keep the 'basics' section unchanged from the master template
+5. Reference specific skills, projects, and experiences from the tailored resume
+
+Expected JSON Structure:
+{{
+  "basics": {{
+    "name": "Mayank Kainth",
+    "label": "Software Engineer",
+    "email": "mayank.kainth@torontomu.ca",
+    "phone": "+1-(647)-206-3327",
+    "url": "https://monso0n.github.io/mayank-kainth",
+    "location": {{
+      "city": "Toronto, Ontario",
+      "countryCode": "Canada",
+      "region": "Ontario"
+    }},
+    "profiles": [...]
+  }},
+  "coverLetter": {{
+    "date": "Current Date",
+    "recipient": {{
+      "name": "Hiring Manager",
+      "company": "{company_name}",
+      "city": "{job_location}"
+    }},
+    "salutation": "Dear Hiring Manager,",
+    "body": [
+      "Paragraph 1...",
+      "Paragraph 2...",
+      "Paragraph 3..."
+    ],
+    "closing": "Sincerely,",
+    "signature": "Mayank Kainth"
+  }}
+}}
+
+Return ONLY this JSON structure with tailored content.
