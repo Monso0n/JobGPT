@@ -9,6 +9,7 @@ COVER LETTER TAILORING RULES:
 - Include personalized recipient info (name, company, address if inferred)
 - Personalize the salutation where possible
 - Rewrite the 'body' field to be 3-5 well-structured paragraphs
+- Make the word count of the body about 500-600 words long
 - Tie directly to job description and career experience from the tailored resume
 - Reference specific skills, projects, and experiences from the tailored resume
 - Ensure consistency between the cover letter and the tailored resume

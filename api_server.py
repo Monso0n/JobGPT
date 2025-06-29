@@ -61,7 +61,7 @@ def get_jobs():
             SELECT id, title, company, location, description, url, 
                    search_keywords, search_location, search_date_posted,
                    experience_level, job_type, work_model, scraped_at,
-                   status, liked, applied
+                   status, liked, applied, disliked
             FROM jobs 
             WHERE 1=1
         """
@@ -119,7 +119,7 @@ def get_job(job_id):
             SELECT id, title, company, location, description, url, 
                    search_keywords, search_location, search_date_posted,
                    experience_level, job_type, work_model, scraped_at,
-                   status, liked, applied, notes
+                   status, liked, applied, disliked, notes
             FROM jobs 
             WHERE id = ?
         """, (job_id,))
@@ -186,6 +186,31 @@ def toggle_job_applied(job_id):
     except Exception as e:
         return jsonify({'error': str(e)}), 500
 
+@app.route('/api/jobs/<int:job_id>/toggle-dislike', methods=['POST'])
+def toggle_job_dislike(job_id):
+    """Toggle the disliked status of a job"""
+    try:
+        conn = get_db_connection()
+        cursor = conn.cursor()
+
+        # Get current disliked status
+        cursor.execute("SELECT disliked FROM jobs WHERE id = ?", (job_id,))
+        job = cursor.fetchone()
+
+        if not job:
+            conn.close()
+            return jsonify({'error': 'Job not found'}), 404
+
+        # Toggle disliked status
+        new_disliked = 0 if job['disliked'] else 1
+        cursor.execute("UPDATE jobs SET disliked = ? WHERE id = ?", (new_disliked, job_id))
+        conn.commit()
+        conn.close()
+
+        return jsonify({'disliked': bool(new_disliked)})
+    except Exception as e:
+        return jsonify({'error': str(e)}), 500
+
 @app.route('/api/jobs/<int:job_id>/mark-applied', methods=['POST'])
 def mark_job_applied(job_id):
     """Mark a job as applied"""
@@ -246,6 +271,14 @@ def get_stats():
         """)
         recent_jobs = cursor.fetchone()['count']
         
+        # Applied jobs count
+        cursor.execute("SELECT COUNT(*) as count FROM jobs WHERE applied = 1")
+        applied_jobs = cursor.fetchone()['count']
+        
+        # Liked jobs count
+        cursor.execute("SELECT COUNT(*) as count FROM jobs WHERE liked = 1")
+        liked_jobs = cursor.fetchone()['count']
+        
         conn.close()
         
         return jsonify({
@@ -253,7 +286,9 @@ def get_stats():
             'status_counts': status_counts,
             'top_companies': top_companies,
             'top_locations': top_locations,
-            'recent_jobs': recent_jobs
+            'recent_jobs': recent_jobs,
+            'applied_jobs': applied_jobs,
+            'liked_jobs': liked_jobs
         })
         
     except Exception as e:
@@ -281,7 +316,7 @@ def search_jobs():
             SELECT id, title, company, location, description, url, 
                    search_keywords, search_location, search_date_posted,
                    experience_level, job_type, work_model, scraped_at,
-                   status, liked, applied
+                   status, liked, applied, disliked
             FROM jobs 
             WHERE 1=1
         """

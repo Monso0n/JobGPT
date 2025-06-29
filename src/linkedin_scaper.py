@@ -401,7 +401,7 @@ def scrape_linkedin_jobs(cookie_file=None, num_jobs=5, search_config=None):
 
         print(f"[NAVIGATE] Going to LinkedIn jobs page with custom search...")
         page.goto(search_url)
-        human_wait(2, 4)
+        human_wait(1, 2 )
 
         job_data = []
         jobs_scraped = 0
@@ -417,7 +417,7 @@ def scrape_linkedin_jobs(cookie_file=None, num_jobs=5, search_config=None):
                 print(f"[SCROLL] Scrolling to load more jobs...")
                 for scroll_attempt in range(3):
                     page.evaluate("window.scrollTo(0, document.body.scrollHeight)")
-                    human_wait(2, 3)
+                    human_wait(1, 2 )
                     print(f"[SCROLL] Scroll attempt {scroll_attempt + 1}/3")
             
             # Try multiple selectors for job cards
@@ -504,7 +504,8 @@ def scrape_linkedin_jobs(cookie_file=None, num_jobs=5, search_config=None):
                     # Click on the job card to load details
                     print(f"[CLICK] Clicking job card...")
                     job.click()
-                    human_wait(2, 4)
+                    human_wait(1, 2 )
+
                     
                     # Wait for job details to load
                     print(f"[WAIT] Waiting for job details to load...")
@@ -739,7 +740,8 @@ def scrape_linkedin_jobs(cookie_file=None, num_jobs=5, search_config=None):
                         print(f"[RECOVERY] Attempting to refresh page due to stale elements...")
                         try:
                             page.reload()
-                            human_wait(3, 5)
+                            human_wait(1, 2)
+
                             # Re-find job cards after refresh
                             job_cards = page.query_selector_all("li[id^='ember'] > div:nth-child(1) > div:nth-child(1)")
                             if job_cards and i < len(job_cards):
@@ -752,8 +754,8 @@ def scrape_linkedin_jobs(cookie_file=None, num_jobs=5, search_config=None):
                             print(f"[RECOVERY] Failed to refresh page: {refresh_error}")
                             continue
                 
-                human_wait(2, 5)
-            
+            human_wait(1, 2 )
+
             # Update jobs scraped count
             jobs_scraped += jobs_on_this_page
             print(f"\n[PROGRESS] Scraped {jobs_scraped}/{num_jobs} jobs so far")
@@ -845,14 +847,15 @@ def scrape_linkedin_jobs(cookie_file=None, num_jobs=5, search_config=None):
                                 if btn_text.isdigit() and int(btn_text) == current_page + 1:
                                     print(f"[PAGINATION] Found next page number: {btn_text}")
                                     btn.click()
-                                    human_wait(3, 5)
+                                    human_wait(1, 2)
+
                                     current_page += 1
                                     next_page_found = True
                                     break
                                 elif "next" in btn_text.lower():
                                     print(f"[PAGINATION] Found 'Next' button: {btn_text}")
                                     btn.click()
-                                    human_wait(3, 5)
+                                    human_wait(2,3)
                                     current_page += 1
                                     next_page_found = True
                                     break
